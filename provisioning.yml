@@ -1,0 +1,6 @@
+- hosts: mycontainer
+  connection: docker
+  tasks:
+    - package:
+        name: git
+        state: latest

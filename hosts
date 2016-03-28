@@ -1,0 +1,2 @@
+[default]
+mycontainer ansible_connection=docker

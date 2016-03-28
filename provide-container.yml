@@ -1,0 +1,9 @@
+- hosts: 127.0.0.1
+  connection: local
+  tasks:
+    - name: my container
+      docker:
+        name: mycontainer
+        image: centos
+        command: sleep infinity
+        state: started
