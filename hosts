@@ -1,2 +1,2 @@
 [default]
-mycontainer ansible_connection=docker
+poccontainer ansible_connection=docker

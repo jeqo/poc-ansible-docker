@@ -1,0 +1,2 @@
+- src: https://github.com/jeqo/ansible-role-java
+  name: java

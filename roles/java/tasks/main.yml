@@ -1,0 +1,18 @@
+---
+# tasks file for java
+- debug:
+    var: java_provider
+
+- include: install-openjdk.yml
+  become: yes
+  when: java_provider == "openjdk"
+
+- include: install-oracle-java.yml
+  become: yes
+  when: java_provider == "oracle"
+
+- include: install-azul-zulu.yml
+  become: yes
+  when: java_provider == "azul"
+
+- include: set-java-home.yml

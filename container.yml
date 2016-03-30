@@ -3,7 +3,7 @@
   tasks:
     - name: my container
       docker:
-        name: mycontainer
+        name: poccontainer
         image: centos
         command: sleep infinity
         state: started
