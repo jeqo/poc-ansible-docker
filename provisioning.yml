@@ -5,12 +5,12 @@
     - command: "sed -i -e \"s/Defaults    requiretty.*/ #Defaults    requiretty/g\" /etc/sudoers"
   roles:
     - role: java
-      java_provider: azul
+      java_provider: openjdk
+      java_type: jdk
       java_version: 8
 
 - hosts: 127.0.0.1
   connection: local
   tasks:
     - name: commit
-      command: >
-        docker commit poccontainer
+      command: docker commit poccontainer
